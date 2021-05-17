@@ -59,7 +59,7 @@
 </ul>
 </div>
 <p>To simplify installation and maintenance of a <a class="reference external" href="https://github.com/asciimoo/morty">morty</a> instance you can use the
-script <a class="reference external" href="https://github.com/searx/searx/blob/master/utils/morty.sh">git://utils/morty.sh</a>.  In most cases you will install <a class="reference external" href="https://github.com/asciimoo/morty">morty</a> simply by
+script <a class="reference external" href="https://github.com/oneness0/searx/blob/master/utils/morty.sh">git://utils/morty.sh</a>.  In most cases you will install <a class="reference external" href="https://github.com/asciimoo/morty">morty</a> simply by
 running the command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo -H ./utils/morty.sh install all
 </pre></div>
@@ -71,7 +71,7 @@ into this user account:</p>
 <li><p>Download and install <a class="reference external" href="https://golang.org/">Go</a> binary in user’s $HOME (<code class="docutils literal notranslate"><span class="pre">~morty</span></code>).</p></li>
 <li><p>Install <a class="reference external" href="https://github.com/asciimoo/morty">morty</a> with the package management from <a class="reference external" href="https://golang.org/">Go</a> (<code class="docutils literal notranslate"><span class="pre">go</span> <span class="pre">get</span> <span class="pre">-v</span> <span class="pre">-u</span>
 <span class="pre">github.com/asciimoo/morty</span></code>)</p></li>
-<li><p>Setup a systemd service unit <a class="reference external" href="https://github.com/searx/searx/blob/master/utils/templates/lib/systemd/system/morty.service">[ref]</a>
+<li><p>Setup a systemd service unit <a class="reference external" href="https://github.com/oneness0/searx/blob/master/utils/templates/lib/systemd/system/morty.service">[ref]</a>
 (<code class="docutils literal notranslate"><span class="pre">/lib/systemd/system/morty.service</span></code>).</p></li>
 </ol>
 <div class="admonition hint">
@@ -186,22 +186,22 @@ inspect service
 option
   set one of the available options
   :new-key:   set new morty key
-apache : http://fv-az224-872/morty/
+apache : http://fv-az127-526/morty/
   :install: apache site with a reverse proxy (ProxyPass)
   :remove:  apache site morty.conf
-nginx (http://fv-az224-872/morty/)
+nginx (http://fv-az127-526/morty/)
   :install: nginx site with a reverse proxy (ProxyPass)
   :remove:  nginx site morty.conf
 
 If needed, set the environment variables in the &#39;.config.sh&#39; file::
-  PUBLIC_URL_MORTY:     http://fv-az224-872/morty/
+  PUBLIC_URL_MORTY:     http://fv-az127-526/morty/
   MORTY_LISTEN:         127.0.0.1:3000
   SERVICE_USER:         morty
 
 To activate result and image proxy in searx, edit settings.yml (read:
 https://searx.github.io/searx/admin/morty.html)::
   result_proxy:
-      url : http://fv-az224-872/morty/
+      url : http://fv-az127-526/morty/
   server:
       image_proxy : True
 </pre></div>
@@ -226,7 +226,7 @@ https://searx.github.io/searx/admin/morty.html)::
 
   <h3>Project Links</h3>
   <ul>
-    <li><a href="https://github.com/searx/searx">Source</a>
+    <li><a href="https://github.com/oneness0/searx">Source</a>
   
     <li><a href="https://github.com/searx/searx/wiki">Wiki</a>
   
