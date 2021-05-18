@@ -1032,8 +1032,9 @@ engines:
   - name : torrentz
     engine : torrentz
     shortcut : tor
-    url: https://torrentzeu.org/
+    url: https://torrentz2.eu/
     timeout : 3.0
+    disabled : True
 
 # Requires Tor
   - name : torch
