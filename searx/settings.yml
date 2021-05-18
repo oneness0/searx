@@ -42,7 +42,7 @@ ui:
     default_locale : "zh" # Default interface locale - leave blank to detect from browser information or use codes from the 'locales' config section
     theme_args :
         oscar_style : logicodev # default style of oscar
-#   results_on_new_tab: False  # Open result links in a new tab by default
+    results_on_new_tab: True  # Open result links in a new tab by default
 #   categories_order :
 #     - general
 #     - files
@@ -222,6 +222,7 @@ engines:
   - name : bing
     engine : bing
     shortcut : bi
+    disabled : True
 
   - name : bing images
     engine : bing_images
@@ -311,6 +312,7 @@ engines:
     engine : currency_convert
     categories : general
     shortcut : cc
+    disabled : True
 
   - name : deezer
     engine : deezer
@@ -379,11 +381,11 @@ engines:
     timeout : 3.0
     weight : 2
     tests: *tests_infobox
+    disabled : True
 
   - name : duckduckgo
     engine : duckduckgo
     shortcut : ddg
-    disabled : True
 
   - name : duckduckgo images
     engine : duckduckgo_images
