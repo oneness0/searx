@@ -1,6 +1,6 @@
 general:
     debug : False # Debug mode, only for development
-    instance_name : "searx" # displayed name
+    instance_name : "fuck baidu" # displayed name
     contact_url: False # mailto:contact@example.com
     enable_stats: False # activate /stats page - note: it may leak usage data
 
@@ -15,8 +15,8 @@ brand:
 
 search:
     safe_search : 0 # Filter results. 0: None, 1: Moderate, 2: Strict
-    autocomplete : "" # Existing autocomplete backends: "dbpedia", "duckduckgo", "google", "startpage", "swisscows", "qwant", "wikipedia" - leave blank to turn it off by default
-    default_lang : "zh" # Default search language - leave blank to detect from browser information or use codes from 'languages.py'
+    autocomplete : "google" # Existing autocomplete backends: "dbpedia", "duckduckgo", "google", "startpage", "swisscows", "qwant", "wikipedia" - leave blank to turn it off by default
+    default_lang : "zh-CN" # Default search language - leave blank to detect from browser information or use codes from 'languages.py'
     ban_time_on_fail : 5 # ban time in seconds after engine errors
     max_ban_time_on_fail : 120 # max ban time in seconds after engine errors
 
@@ -39,7 +39,7 @@ ui:
     static_path : "" # Custom static path - leave it blank if you didn't change
     templates_path : "" # Custom templates path - leave it blank if you didn't change
     default_theme : oscar # ui theme
-    default_locale : "" # Default interface locale - leave blank to detect from browser information or use codes from the 'locales' config section
+    default_locale : "zh" # Default interface locale - leave blank to detect from browser information or use codes from the 'locales' config section
     theme_args :
         oscar_style : logicodev # default style of oscar
 #   results_on_new_tab: False  # Open result links in a new tab by default
@@ -70,7 +70,7 @@ ui:
 outgoing: # communication with search engines
     request_timeout : 3.0 # default timeout in seconds, can be override by engine
     # max_request_timeout: 10.0 # the maximum timeout in seconds
-    useragent_suffix : "" # suffix of searx_useragent, could contain informations like an email address to the administrator
+    useragent_suffix : "fuck baidu" # suffix of searx_useragent, could contain informations like an email address to the administrator
     pool_connections : 100 # The maximum number of concurrent connections that may be established.
     pool_maxsize : 20 # Allow the connection pool to maintain keep-alive connections below this point.
     enable_http2: True  # See https://www.python-httpx.org/http2/
