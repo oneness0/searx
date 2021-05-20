@@ -197,6 +197,9 @@ fieldset[disabled] .twitter-typeahead .tt-input {
   display: flex;
   align-items: center;
 }
+.result_header a {
+  word-break: break-all;
+}
 .result_header .favicon {
   margin-bottom: 0px !important;
   margin-right: 5px;
